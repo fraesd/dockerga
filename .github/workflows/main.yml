@@ -15,4 +15,6 @@ jobs:
         who-to-greet: 'Hamlet the cat'
     # use the output from the hello step
     - name: Get the output time
-      run: echo "The time was ${{ steps.hello.outputs.time }}  
+      run: echo "The time was ${{ steps.hello.outputs.time }}"
+    - name: Get the dir listing
+      run: echo "The dir listing contents were ${{ steps.hello.outputs.ls_out }}"
